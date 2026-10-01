@@ -27,9 +27,9 @@ def _require(name: str, default: str = "") -> str:
 # Telegram Bot Credentials
 # ==============================
 
-BOT_TOKEN = _require("BOT_TOKEN", "8660673890:AAHCIJMnlH_mIpRqMXi6uIW5rpj7iRX_uvA")
-API_ID = int(_require("API_ID", "33029767"))
-API_HASH = _require("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
+BOT_TOKEN = _require("BOT_TOKEN", "8904894149:AAEZIwxTfVrPFzjyl5y4R7V74X7QEfPw-Ss")
+API_ID = int(_require("API_ID", "20432885"))
+API_HASH = _require("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec")
 
 
 # ==============================
@@ -41,7 +41,7 @@ API_HASH = _require("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
 # gated on ADMINS, so silently defaulting to a baked-in ID would give that
 # ID admin access (including those dangerous commands) on any deployment
 # that forgets to set ADMINS explicitly. Failing loudly is safer.
-ADMINS = [int(admin) for admin in _require("ADMINS", "8931907813").split(",") if admin]
+ADMINS = [int(admin) for admin in _require("ADMINS", "8729304171").split(",") if admin]
 
 
 # ==============================
@@ -96,7 +96,7 @@ DB_NAME = os.environ.get("DB_NAME", "SaveRestricted2")
 # ==============================
 
 # Telegram channel ID the bot logs to (example: -1001234567890)
-LOG_CHANNEL = int(_require("LOG_CHANNEL", "-1003925649805"))
+LOG_CHANNEL = int(_require("LOG_CHANNEL", "-1003951808679"))
 
 # --- JDownloader (/jd) — covers hundreds of hosts yt-dlp doesn't. ---
 # Free account at https://my.jdownloader.org — see JDOWNLOADER_SETUP.md.
